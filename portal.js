@@ -80,6 +80,9 @@ $(function() {
             url: urlRequest,
             type: 'GET',
             success: function(res) {
+                if (res.length == 0) {
+                    $("#" + filmeLancamento.trailer).attr("src", "https://www.youtube.com/embed/");
+                }
                 for (let i = 0; i < 1; i++) {
                     $("#" + filmeLancamento.trailer).attr("src", "https://www.youtube.com/embed/" + res["results"][i]["key"]);
                 }
