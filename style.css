@@ -1,0 +1,75 @@
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(206, 202, 208, 1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(206, 202, 208, 1);
+    outline: 0 none;
+}
+
+body {
+    background-color: #ffffff;
+    padding-top: 70px;
+}
+
+.darker-section {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.lighter-section {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #454545;
+}
+
+.bt-outlined {
+    border-color: #e7e7e7;
+    border-width: 2px;
+}
+
+.bt-outlined:hover {
+    background: #e7e7e7;
+}
+
+.page-section {
+    min-height: 450px;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.fillable-item {
+    position: relative;
+    min-height: 200px;
+    height: 100%;
+    width: 100%;
+}
+
+.profile-img {
+    max-height: 82px;
+    max-width: 82px;
+}
+
+.paragraph {
+    min-height: 160px;
+}
+
+.card {
+    min-height: 500px;
+}

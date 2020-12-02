@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS local -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones FontAwesome -->
+    <script src="https://kit.fontawesome.com/baf205096c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Portal de Filmes</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="75">
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav id="navbar-site" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Portal de Filmes">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lancamentos">Lançamentos <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#em-destaque">Em destaque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#entrevistas">Entrevistas & Makingof</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#novidades">Novidades</a>
+                        </li>
+                    </ul>
+                    <div class="input-group col-md-2">
+                        <span class="input-group-prepend">
+                                <div class="input-group-text bg-transparent border-right-0">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </span>
+                        <input class="form-control shadow-none py-2 border-left-0 mr-sm-2" type="search" placeholder="Pesquisar" id="search-site">
+                        </span>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo do site -->
+    <main>
+        <section id="lancamentos" class="darker-section">
+            <h2 class="text-center text-dark pt-3">Lançamentos</h2>
+
+            <div id="carouselLancamento" class="carousel slide" data-interval="false" background-color="#0000FF">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselLancamento" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselLancamento" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner px-4">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-6 page-section">
+                                <iframe id="trailerLancamento1" class="fillable-item" src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="col-12 col-md-6 page-section">
+                                <h4 id="tituloLancamento1" class="text-dark">Vingadores: Guerra Infinita</h4>
+                                <div>
+                                    <p class="text-dark"><strong class="text-dark">Sinopse:</strong> <span id="sinopseLancamento1">Em Vingadores: Guerra Infinita, Thanos (Josh Brolin) enfim chega à Terra, disposto a reunir as Joias do Infinito. Para enfrentá-lo, os Vingadores precisam
+                                        unir forças com os Guardiões da Galáxia, ao mesmo tempo em que lidam com desavenças entre alguns de seus integrantes.</span></p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <p class="text-dark"><strong class="text-dark">Direção:</strong> <span id="direcaoLancamento1">Russo, Anthony Russo</span></p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <p class="text-dark"><strong class="text-dark">Roteiro:</strong> <span id="roteiroLancamento1">Stephen McFeely, Christopher Markus</span></p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <p class="text-dark"><strong class="text-dark">Estreia:</strong> <span id="estreiaLancamento1">2019</span></p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="text-dark"><strong class="text-dark">Elenco:</strong> <span id="elencoLancamento1">Robert Downey Jr., Chris Hemsworth, Mark Ruffalo</span></p>
+                                </div>
+
+                                <div>
+                                    <p class="text-dark"><strong class="text-dark">Avaliação:</strong>
+                                        <span id="avaliacaoLancamento1"><span class="fas fa-star text-dark"></span>
+                                        <span class="fas fa-star text-dark"></span>
+                                        <span class="fas fa-star text-dark"></span>
+                                        <span class="fas fa-star text-dark"></span>
+                                        <span class="fas fa-star-half-alt text-dark"></span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-6 page-section">
+                                <iframe class="fillable-item" src="https://www.youtube.com/embed/Z1BCujX3pw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="col-12 col-md-6 page-section">
+                                <h4 class="text-dark">Capitã Marvel</h4>
+                                <div>
+                                    <p class="text-dark"><strong class="text-dark">Sinopse:</strong> Em Capitã Marvel, Carol Danvers (Brie Larson) é uma ex-agente da Força Aérea norte-americana, que, sem se lembrar de sua vida na Terra, é recrutada pelos Kree para fazer parte
+                                        de seu exército de elite. Inimiga declarada dos Skrull, ela acaba voltando ao seu planeta de origem para impedir uma invasão dos metaformos, e assim vai acabar descobrindo a verdade sobre si, com a ajuda do agente
+                                        Nick Fury (Samuel L. Jackson) e da gata Goose.
+                                    </p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <p class="text-dark"><strong class="text-dark">Direção:</strong> Anna Boden, Ryan Fleck</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <p class="text-dark"><strong class="text-dark">Roteiro:</strong> Nicole Perlman, Meg LeFauve</p>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-3">
+                                        <p class="text-dark"><strong class="text-dark">Estreia:</strong> 2019</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="text-dark"><strong class="text-dark">Elenco:</strong> Robert Downey Jr., Chris Hemsworth, Mark Ruffalo</p>
+                                </div>
+
+                                <div>
+                                    <p class="text-dark"><strong class="text-dark">Avaliação:</strong>
+                                        <span class="fas fa-star text-dark"></span>
+                                        <span class="fas fa-star text-dark"></span>
+                                        <span class="fas fa-star text-dark"></span>
+                                        <span class="fas fa-star text-dark"></span>
+                                        <span class="far fa-star text-dark"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="em-destaque" class="container lighter-section mt-4">
+            <!-- Em destaque -->
+            <div class="row">
+                <h2 class="text-dark mr-auto col-xs-12 col-md-4">Em destaque</h2>
+
+                <div class="col-xs-1 col-md-4"></div>
+
+                <div class="dropdown col-xs-12 col-md-4 d-flex">
+                    <button class="btn bt-outlined dropdown-toggle text-dark w-100 text-left" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categoria: TODOS
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">TODOS</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+                    <div class="card">
+                        <a id="linkFilme1" href="#"><img id="posterFilme1" src="img/endgame.jpg" class="card-img-top h-75" alt="Filme 1"></a>
+                        <div class="card-body">
+                            <h5 id="tituloFilme1" class="card-title text-dark">Vingadores: Ultimato</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+                    <div class="card">
+                        <a id="linkFilme2" href="#"><img id="posterFilme2" src="img/civil-war.jpg" class="card-img-top h-75" alt="Filme 2"></a>
+                        <div class="card-body">
+                            <h5 id="tituloFilme2" class="card-title text-dark">Guerra Civil</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+                    <div class="card">
+                        <a id="linkFilme3" href="#"><img id="posterFilme3" src="img//captain-marvel.jpg" class="card-img-top h-75" alt="Filme 3"></a>
+                        <div class="card-body">
+                            <h5 id="tituloFilme3" class="card-title text-dark">Capitã Marvel</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+                    <div class="card">
+                        <a id="linkFilme4" href="#"><img id="posterFilme4" src="img/black-panther.jpg" class="card-img-top h-75" alt="Filme 4"></a>
+                        <div class="card-body">
+                            <h5 id="tituloFilme4" class="card-title text-dark">Pantera Negra</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-4 mx-0">
+                <button id="carregarFilmesButton" class="btn btn-dark ml-auto col-xs-12 col-sm-12 col-md-4 col-lg-3">Carregar mais filmes</button>
+            </div>
+
+            <!-- Últimas avaliações -->
+
+            <div id="avaliacoes" class="row mt-4">
+                <h2 class="text-dark mr-auto col-xs-12 col-md-4">Últimas avaliações</h2>
+            </div>
+
+            <div class="row mt-2">
+                <article class="col-xs-12 col-md-12 col-lg-6 col-xl-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="w-100 mt-3 profile-img rounded-circle" src="img/nyt.png" alt="New York Times">
+                        </div>
+
+                        <div class="col-8">
+                            <h4 class="text-dark font-weight-bold py-3">A.O. Scott</h4>
+                            <p class="text-dark paragraph"><strong class="text-dark">Avaliação:</strong> "Homem de Ferro, Thor, o Hulk, Capitão América e outras estrelas acertam contas, amarram pontas soltas e dão uma longa volta de vitória no capítulo final deste ciclo."</p>
+                            <div class="row">
+                                <p class="text-dark col-12 col-md6">
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span></p>
+                                <p class="text-dark col-12 col-md6 font-weight-bold">02/09/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-md-12 col-lg-6 col-xl-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="w-100 mt-3 profile-img rounded-circle" src="img/rolling-stones.jpg" alt="Rolling Stones">
+                        </div>
+
+                        <div class="col-8">
+                            <h4 class="text-dark font-weight-bold py-3">Peter Travers</h4>
+                            <p class="text-dark paragraph"><strong class="text-dark">Avaliação:</strong> "Não espere um final feliz típico. Apenas prepare-se para ficar impressionado."</p>
+                            <div class="row">
+                                <p class="text-dark col-12 col-md6">
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span></p>
+                                <p class="text-dark col-12 col-md6 font-weight-bold">02/09/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-md-12 col-lg-6 col-xl-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="w-100 mt-3 profile-img rounded-circle" src="img/vulture.png" alt="Vulture">
+                        </div>
+
+                        <div class="col-8">
+                            <h4 class="text-dark font-weight-bold py-3">David Edelstein</h4>
+                            <p class="text-dark paragraph"><strong class="text-dark">Avaliação:</strong> "Mesmo com mais de três horas, o gigantesco Vingadores: Endgame é leve e mais livremente inventivo do que precisava ser."</p>
+                            <div class="row">
+                                <p class="text-dark col-12 col-md6">
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span>
+                                    <span class="fas fa-star text-dark"></span></p>
+                                <p class="text-dark col-12 col-md6 font-weight-bold">02/09/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="row mt-4 mx-0">
+                <button class="btn btn-dark ml-auto col-xs-12 col-sm-12 col-md-4 col-lg-3">Carregar mais avaliações</button>
+            </div>
+
+        </section>
+
+        <section id="entrevistas" class="darker-section">
+            <div class="container mt-4 pb-1">
+                <div class="row">
+                    <h2 class="text-dark mt-3 col-12"><strong>Entrevistas & Making of</strong></h2>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div>
+                            <iframe class="fillable-item" src="https://www.youtube.com/embed/PnBZgxMd6wI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <h5 class="text-dark mt-2"><strong class="text-dark">Filme:</strong> Vingadores: Ultimato</h5>
+                        <div class="row">
+                            <p class="text-dark col-12">
+                                <strong class="text-dark">Direção:</strong> Joe Russo, Anthony Russo<br>
+                                <strong class="text-dark">Roteiro:</strong> Stephen McFeely, Christopher Markus<br>
+                                <strong class="text-dark">Estreia:</strong> 2019
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div>
+                            <iframe class="fillable-item" src="https://www.youtube.com/embed/D7A96h02UEM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <h5 class="text-dark mt-2"><strong class="text-dark">Filme:</strong> Vingadores: Ultimato</h5>
+                        <div class="row">
+                            <p class="text-dark col-12">
+                                <strong class="text-dark">Direção:</strong> Joe Russo, Anthony Russo<br>
+                                <strong class="text-dark">Roteiro:</strong> Stephen McFeely, Christopher Markus<br>
+                                <strong class="text-dark">Estreia:</strong> 2019
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-4">
+                        <div>
+                            <iframe class="fillable-item" src="https://www.youtube.com/embed/yZY7EsXwC3k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <h5 class="text-dark mt-2"><strong class="text-dark">Filme:</strong> Capitã Marvel</h5>
+                        <div class="row">
+                            <p class="text-dark col-12">
+                                <strong class="text-dark">Direção:</strong> Anna Boden, Ryan Fleck<br>
+                                <strong class="text-dark">Roteiro:</strong> Nicole Perlman, Meg LeFauve<br>
+                                <strong class="text-dark">Estreia:</strong> 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 mb-4 mx-0">
+                    <button class="btn btn-dark ml-auto col-xs-12 col-sm-12 col-md-4 col-lg-3">Carregar mais filmes</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="novidades" class="container mt-4">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <h2 class="text-left text-dark pt-3 mb-4">Novidades</h2>
+
+                    <article class="row">
+                        <img class="col-xs-12 col-md-4 h-100 my-auto" src="img/article-1.jpg">
+
+                        <div class="col-xs-12 col-md-8">
+
+                            <h4 class="text-dark pt-2 py-md-0">Miss Marvel: Definida a protagonista da série do Disney+</h4>
+
+                            <p class="text-dark">
+                                Depois de escalar Tatiana Maslany como a She-Hulk, a Disney definiu quem será a protagonista de Miss Marvel: a novata Iman Vellani vai assumir o papel principal da nova série de TV da Marvel Studios. A jovem fará sua estreia nas telinhas com tal projeto,
+                                porém participou de uma comitê especial no Festival de Toronto 2019.
+                            </p>
+
+                            <span class="badge badge-pill badge-dark px-2 py-1">Miss Marvel</span> <span class="badge badge-pill badge-dark px-2 py-1">Disney+</span> <span class="badge badge-pill badge-dark px-2 py-1">Iman Vellanispan
+                        </div>
+                    </article>
+
+                    <hr>
+
+                    <article class="row">
+                        <img class="col-xs-12 col-md-4 h-100 my-auto" src="img/article-2.jpg">
+
+                        <div class="col-xs-12 col-md-8">
+
+                            <h4 class="text-dark pt-2 py-md-0">Marvel: 4 filmes de heróis serão lançados pelo estúdio em 2021</h4>
+
+                            <p class="text-dark">
+                                Com a pandemia do novo coronavírus, alguns filmes da Marvel como Viúva Negra e Eternos foram adiados para o ano que vem. Aparentemente, WandaVision será a única produção do estúdio a ser lançada ainda em 2020. Mas vamos enxergar pelo lado positivo: 2021
+                                será recheado de estreias grandiosas.
+                            </p>
+
+                            <span class="badge badge-pill badge-dark px-2 py-1">Viúva Negra</span> <span class="badge badge-pill badge-dark px-2 py-1">WandaVision</span> <span class="badge badge-pill badge-dark px-2 py-1">Eternos</span>
+                        </div>
+                    </article>
+
+                    <hr>
+
+                    <article class="row">
+                        <img class="col-xs-12 col-md-4 h-100 my-auto" src="img/article-3.jpg">
+
+                        <div class="col-xs-12 col-md-8">
+
+                            <h4 class="text-dark pt-2 py-md-0">Homem-Aranha 3 pode ter retorno de Jamie Foxx como Electro</h4>
+
+                            <p class="text-dark">
+                                Um dos quatro filmes planejados pela Marvel para 2021, Homem-Aranha 3 promete ter uma surpresa para os fãs do herói. Segundo informações do portal The Hollywood Reporter, Jamie Foxx está negociando para reprisar o papel do vilão Electro no projeto estrelado
+                                por Tom Holland.
+                            </p>
+
+                            <span class="badge badge-pill badge-dark px-2 py-1">Homem-Aranha</span> <span class="badge badge-pill badge-dark px-2 py-1">Jamie Foxx</span> <span class="badge badge-pill badge-dark px-2 py-1">Tom Holland</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <h2 class="text-left text-dark pt-3 mb-4">Sobre</h2>
+                    <p class="text-dark">
+                        Portal de Filmes Marvel é um site independente sobre notícias, críticas e muito mais a respeito do maior universo cinematográfico de super-heróis.
+                    </p>
+
+                    <h2 class="text-left text-dark pt-3">Editorial</h2>
+                    <p class="text-dark">
+                        <span class="fas fa-user text-dark"></span>  <strong>Redação: </strong> Lucas Izidorio
+                        <br>
+                        <span class="fas fa-user text-dark"></span>  <strong>Pesquisa: </strong> Lucas Izidorio
+                        <br>
+                        <span class="fas fa-user text-dark"></span>  <strong>Gerente Geral: </strong> Lucas Izidorio
+                    </p>
+
+                    <h4 class="text-left text-dark pt-3">Redes Sociais</h4>
+                    <p>
+                        <h1 class="text-dark"><span class="fab fa-facebook-square"></span> <span class="fab fa-twitter"></span> <span class="fab fa-instagram"></span></h1>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="darker-section mt-5">
+        <section class="container">
+            <div class="row">
+                <p class="col-xs-12 col-sm-8 pt-5 text-dark mr-auto ml-auto mr-md-0 ml-md-0">Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - <strong class="text-dark">ICEI PUC Minas</strong></p>
+
+                <div class="col-xs-12 navbar-brand pt-5 pb-3 py-md-5 ml-auto mr-auto mr-md-0" href="#">
+                    <img src="img/logo.png" alt="Portal de Filmes">
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            window.addEventListener("hashchange", function() {
+                scrollBy(0, -70)
+            })
+
+        });
+    </script>
+
+    <script src="portal.js"></script>
+
+</body>
+
+</html>
