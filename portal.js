@@ -76,13 +76,11 @@ $(function() {
 
     function carregarTrailer(id, filmeLancamento) {
         let urlRequest = endpoint + "movie/" + id + "/videos" + "?api_key=" + apiKey + "&language=en-US";
+        $("#" + filmeLancamento.trailer).attr("src", "https://www.youtube.com/embed/");
         $.ajax({
             url: urlRequest,
             type: 'GET',
             success: function(res) {
-                if (res.length == 0) {
-                    $("#" + filmeLancamento.trailer).attr("src", "https://www.youtube.com/embed/");
-                }
                 for (let i = 0; i < 1; i++) {
                     $("#" + filmeLancamento.trailer).attr("src", "https://www.youtube.com/embed/" + res["results"][i]["key"]);
                 }
@@ -92,7 +90,7 @@ $(function() {
 
     function carregarMaisInfo(id, filmeLancamento) {
         console.log("teste" + id);
-        let urlRequest = endpoint + "movie/" + id + "/credits" + "?api_key=" + apiKey + "&language=en-US";
+        let urlRequest = endpoint + "movie/" + id + "/credits" + "?api_key=" + apiKey + "&language=pt-BR";
         console.log(urlRequest);
         $.ajax({
             url: urlRequest,
@@ -132,12 +130,13 @@ $(function() {
     }
 
     function carregarLancamentos() {
-        let urlRequest = endpoint + "movie/now_playing" + "?api_key=" + apiKey + "&language=pt-BR";
+        let urlRequest = endpoint + "movie/popular" + "?api_key=" + apiKey + "&language=pt-BR";
         $.ajax({
             url: urlRequest,
             type: 'GET',
             success: function(res) {
                 for (let i = 0; i < 1; i++) {
+                    console.log("test");
                     console.log(res["results"][i]["id"]);
                     carregarTrailer(res["results"][i]["id"], filmesLancamentos[i]);
                     definirHtml(filmesLancamentos[i].titulo, res["results"][i]["title"]);
